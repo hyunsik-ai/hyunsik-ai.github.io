@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Speech Samples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sample-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .sample-card:hover {
+            transform: scale(1.05);
+        }
+
+        .sample-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .audio-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+
+<header>
+    <h1>Visual Speech Samples</h1>
+    <p>Explore various speech synthesis samples below.</p>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Sample Card 1 -->
+        <div class="sample-card">
+            <h3>Sample 1: Text-to-Speech Example</h3>
+            <p>Description: This sample demonstrates speech synthesis for the input text: "Hello, world!"</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="sample1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Sample Card 2 -->
+        <div class="sample-card">
+            <h3>Sample 2: Neural TTS Example</h3>
+            <p>Description: This example showcases the use of a neural TTS model for natural-sounding speech.</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="sample2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Sample Card 3 -->
+        <div class="sample-card">
+            <h3>Sample 3: FastSpeech Example</h3>
+            <p>Description: This is a demonstration of FastSpeech 2's speech synthesis capabilities.</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="sample3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
